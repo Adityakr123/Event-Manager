@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<h1>DOM Examples</h1>
+<p>
+<input id="name" type="text"> YES!
+<button  onclick="highp();">high priority</button>
+<button  onclick="midp();">medium priority</button>
+<button  onclick="lowp();">low priority</button>
+
+</p>
+<p id="demo"></p>
+<br>
+<p>
+  <button  onclick="highshow();"> show all high priority</button>
+  <button  onclick="midshow();"> show all medium priority</button>
+  <button  onclick="lowshow();">show all low priority</button> 
+</p>
+<p id="dem"></p>
+
+<script> 
+ let text = "";
+ let high = "";
+ let mid = "";
+ let low = "";
+ function highp(){
+  var message=document.getElementById("name").value;
+  
+  text += message + "<br>";
+  high += message + "<br>";
+  document.getElementById("demo").innerHTML = text;
+
+}
+function midp(){
+  var message=document.getElementById("name").value;
+  
+  text += message + "<br>";
+  mid += message + "<br>";
+  document.getElementById("demo").innerHTML = text;
+
+
+
+}
+function lowp(){
+  var message=document.getElementById("name").value;
+  
+  text += message + "<br>";
+  low += message + "<br>";
+  document.getElementById("demo").innerHTML = text;
+
+
+
+} function highshow(){
+  
+  
+
+  document.getElementById("dem").innerHTML = high;
+
+}
+function midshow(){
+ 
+  
+  document.getElementById("dem").innerHTML = mid;
+
+
+
+}
+function lowshow(){
+
+  document.getElementById("dem").innerHTML = low;
+
+
+
+}
+</script>
+</body>
+</html>
