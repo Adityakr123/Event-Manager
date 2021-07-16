@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html>
+<<<<<<< HEAD
+<head>
+    <title>Major Project</title>
+=======
 <body>
 
 <link rel="stylesheet" href="a.css">
@@ -13,34 +17,45 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
     <option value="h" >HIGH</option>
     <option value="m">MEDIUM</option>
     <option value="l">LOW</option>
+>>>>>>> 08ab026c5b03ed067b44ede8971e09f7b5d7bfbe
     
-  </select>
-  <input type="submit" onclick="main()">
-</p>
-
-<!-- <p>
-
-<input id="name" type="text"> YES!
-<button  onclick="highp();">high priority</button>
-<button  onclick="midp();">medium priority</button>
-<button  onclick="lowp();">low priority</button>
-
-</p> -->
-
-<p id="demohigh" class="red"></p>
-<p id="demomid" class="blue" ></p>
-<p id="demolow" class="green"></p>
-
-
-
-<p>
-  <button  onclick="highshow();"> show all high priority</button>
-  <button  onclick="midshow();"> show all medium priority</button>
-  <button  onclick="lowshow();">show all low priority</button> 
-</p> 
-<p id="dem" ></p>
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="a.css">
+</head>
+<body align="center">
+    <div class="header">
+        <h3>MAJOR PROJECT</h3>
+        </div>
+    <br><br><br><br>
+    <h1 class="heading">Task Manager</h1>
+    <h1 class="font">Enter Your Task and Choose A Priority</h1>
+    <br>
+    <input class="input_edit" id="name" type="text">
+    <br><br> 
+    <label for="priority">Choose a priority:</label>
+    <select class="btn" id="priority" name="priority">
+    <option value="h" >HIGH</option>
+    <option value="m">MEDIUM</option>
+    <option value="l">LOW</option>    
+    </select>
+    <input class="btn" type="submit" onclick="main()">
+    </p>
+    <div align="center" class="font" >
+    <p id="demohigh" class="red"></p>
+    <p id="demomid" class="amber"></p>
+    <p id="demolow" class="green"></p>
+    </div>
+    <br><br>
+    <p>
+    <button class="btn" onclick="highshow();"> show all high priority</button>
+    <button class="btn" onclick="midshow();"> show all medium priority</button>
+    <button class="btn" onclick="lowshow();">show all low priority</button> 
+    </p>    
+    <p id="dem" class="font_two"></p>
+    <div class="footer">
+    <h4 class="font_three">Made By Aditya Kumar</h4>
+    </div>
+    <br><br>
 <script src="test.js"></script>
-
 </body>
 </html>
